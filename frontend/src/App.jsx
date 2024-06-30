@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <div>
+        <div>
+          <h1>SocialSphere</h1>
        </div>
     </>
   )
