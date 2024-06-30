@@ -1,0 +1,15 @@
+:root {
+  --yellow: #2196f3; 
+  --orange: #9c27b0; 
+  --black: #4caf50; /* Changed from black to green */
+  --gray: #ff5722; /* Changed from gray to deep orange */
+  --profileShadow: 0px 4px 17px 2px rgba(255, 0, 0, 0.25); /* Changed shadow to use red */
+  --hrColor: #03a9f4; /* Changed from gray to light blue */
+  --cardColor: rgba(0, 255, 0, 0.64); /* Changed from white to green */
+  --buttonBg: linear-gradient(98.63deg, #e91e63 0%, #9c27b0 100%); /* Changed button background to pink and purple */
+  --inputColor: rgba(255, 0, 0, 0.07); /* Changed input color to red */
+  --photo: #ffeb3b; /* Changed from green to yellow */
+  --video: #ff9800; /* Changed from blue to orange */
+  --location: #8bc34a; /* Changed from red to light green */
+  --shedule: #607d8b; /* Changed from gold to blue gray */
+}
