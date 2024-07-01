@@ -40,3 +40,14 @@
   background: #a6ddf0;
   filter: blur(72px);
 }
+
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #03a9f4;
+}
