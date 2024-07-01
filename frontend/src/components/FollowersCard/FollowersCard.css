@@ -1,6 +1,7 @@
+
 .FollowersCard{
     width: 100%;
-    border-radius: 0.75rem;
+    border-radius: 0.7rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -9,15 +10,17 @@
 
 .follower{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .follower>div{
     display: flex;
-    flex-direction: row;
     gap: 10px;
 }
 
-.followerImg{
+
+.followerImage{
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 50%;
@@ -33,4 +36,14 @@
 .name>span:nth-of-type(1){
     font-weight: bold;
 }
+
+
+.fc-button{
+    height: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
 
