@@ -45,6 +45,12 @@
     cursor: pointer;
 }
 
+.fc-button:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid blue;
+    color: blue;
+}
 
 
 
