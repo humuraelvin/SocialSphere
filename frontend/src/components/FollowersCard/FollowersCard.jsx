@@ -17,7 +17,7 @@ const FollowersCard = () => {
                             <span>@{follower.username}</span>
                         </div>
                    </div>
-                   <button>
+                   <button className='btn'>
                     Follow
                    </button>
                 </div>
