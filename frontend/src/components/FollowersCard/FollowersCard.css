@@ -7,10 +7,13 @@
     font-size: 13px;
 }
 
-
+.follower{
+    display: flex;
+}
 
 .follower>div{
     display: flex;
+    flex-direction: row;
     gap: 10px;
 }
 
