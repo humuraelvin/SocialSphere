@@ -2,8 +2,8 @@ import React from 'react'
 
 const LogoSearch = () => {
   return (
-    <div>
-      
+    <div className='LogoSearch'>
+      LogoSearch
     </div>
   )
 }
