@@ -11,7 +11,7 @@
     display: flex;
     background-color: var(--inputColor);
     border-radius: 10px;
-    padding: 7px;
+    padding: 4px;
 }
 
 .Search>input{
