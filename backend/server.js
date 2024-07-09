@@ -11,6 +11,8 @@ import { fileURLToPath } from 'url'
 import dbconnection from './utils/dbconnection.js'
 import { register } from './controllers/auth.js'
 import authRoutes from './routes/auth.routes.js'
+import verifyToken from './middleware/auth.middleware.js'
+import userRoutes from './routes/user.routes.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -40,9 +42,10 @@ const storage = multer.diskStorage({
 const upload = multer({ storage })
 
 
-app.post("/auth/register", upload.single("picture"), register)
+app.post("/auth/register", upload.single("picture"), verifyToken, register)
 
 app.use('/auth', authRoutes);
+app.use('/users', userRoutes);
 
 const PORT = process.env.PORT || 6001
 
