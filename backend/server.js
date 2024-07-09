@@ -61,4 +61,8 @@ dbconnection();
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+
+    User.insertMany(users);
+    Post.insertMany(posts);
+
 })
