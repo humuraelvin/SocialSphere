@@ -75,7 +75,17 @@ const likePost = async (req, res) => {
             post.likes.set(userId, true);
         }
 
+        const updatedPost = await Post.findByIdAndUpdate(
+            id,
+            { likes : post.likes },
+            { new : true }
+        )
+
+        res.status(200).json(updatedPost);
+
     } catch (error) {
         return res.status(500).json({ message:"Internal server error", error: error.message })
     }
 }
+
+export default { createPost, getFeedPosts, getUserPosts, likePost }
