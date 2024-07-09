@@ -10,6 +10,7 @@ import path, { dirname } from 'path'
 import { fileURLToPath } from 'url'
 import dbconnection from './utils/dbconnection.js'
 import { register } from './controllers/auth.js'
+import authRoutes from './routes/auth.routes.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -40,6 +41,8 @@ const upload = multer({ storage })
 
 
 app.post("/auth/register", upload.single("picture"), register)
+
+app.use('/auth', authRoutes);
 
 const PORT = process.env.PORT || 6001
 
