@@ -62,7 +62,18 @@ const getUserPosts = async (req, res) => {
 const likePost = async (req, res) => {
     try {
         
-        
+        const { id } = req.params;
+
+        const { userId } = req.body;
+
+        const post = await Post.findById(id);
+        const isLiked = post.likes.get(userId);
+
+        if (isLiked) {
+            post.likes.delete(userId);
+        }else{
+            post.likes.set(userId, true);
+        }
 
     } catch (error) {
         return res.status(500).json({ message:"Internal server error", error: error.message })
