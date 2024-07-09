@@ -41,7 +41,7 @@ export const register = async(req, res) => {
 }
 
 
-export  const login = async (req, res) => {
+const login = async (req, res) => {
     try {
         
         const { email, password } = req.body;
@@ -67,3 +67,5 @@ export  const login = async (req, res) => {
         res.status(500).json({message:"Internal server error", error:error.message})
     }
 }
+
+export default login;
