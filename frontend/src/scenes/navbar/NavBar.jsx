@@ -29,6 +29,7 @@ import { setMode,setLogout } from '../../state/index.js'
 import { useNavigate } from 'react-router-dom'
 import FlexBetween from '../../components/FlexBetween.jsx'
 
+
 const NavBar = () => {
 
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
