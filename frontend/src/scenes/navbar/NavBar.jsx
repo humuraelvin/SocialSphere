@@ -9,7 +9,8 @@ import{
   MenuItem,
   FormControl,
   useTheme,
-  useMediaQuery
+  useMediaQuery,
+  Icon
 } from '@mui/material'
 
 import {
@@ -46,7 +47,35 @@ const NavBar = () => {
 
   return 
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
-      
+      <FlexBetween gap="1.75rem">
+        <Typography
+        fontWeight="bold"
+        fontSize="clamp(1rem, 2rem, 2.25rem)"
+        color="primary"
+        onClick={() => navigate('/home')}
+        sx={{
+          "&:hover":{
+            color: primaryLight,
+            cursor: "pointer"
+          }
+        }}
+        >
+          SocialSphere 
+        </Typography>
+        {
+          isNonMobileScreens && (
+            <FlexBetween backgroundColor={neutralLight} borderRadius="9px" gap="3rem" padding="0.1rem 1.5rem">
+              <InputBase placeholder='Search... '/>
+              <IconButton>
+                <Search />
+              </IconButton>
+            </FlexBetween>
+          )
+        }
+      </FlexBetween>
+
+        
+
     </FlexBetween>
   
 };
