@@ -22,6 +22,8 @@ import {
   Close,
 } from '@mui/icons-material';
 
+import Logo from '../../assets/logo-removebg-preview.png'
+
 import { useDispatch, useSelector } from 'react-redux';
 import { setMode, setLogout } from '../../state/index.js';
 import { useNavigate } from 'react-router-dom';
@@ -59,7 +61,7 @@ const NavBar = () => {
             },
           }}
         >
-          Sociopedia
+         <img src={Logo} alt="" className='logo' /> Sociopedia
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
