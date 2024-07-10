@@ -61,7 +61,7 @@ const NavBar = () => {
             },
           }}
         >
-         <img src={Logo} alt="" className='logo' /> Sociopedia
+         <img src={Logo} alt="" className='logo' /> SocialSphere
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
