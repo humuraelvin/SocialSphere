@@ -74,7 +74,8 @@ const NavBar = () => {
         }
       </FlexBetween>
 
-        { isNonMobileScreens ? (<FlexBetween gap='2rem'>
+        { isNonMobileScreens ? (
+          <FlexBetween gap='2rem'>
           <IconButton onClick={() => dispatch(setMode())}>
             {
               theme.palette.mode === "dark" ? (
@@ -143,7 +144,8 @@ const NavBar = () => {
                   </IconButton>
               </Box>
 
-              <IconButton onClick={() => dispatch(setMode())}>
+         <FlexBetween display='flex' flexDirection='column' justifyContent='center' alignItems='center' gap='3rem'>
+          <IconButton onClick={() => dispatch(setMode())} sx={{fontSize: '25px'}}>
             {
               theme.palette.mode === "dark" ? (
                 <DarkMode sx={{ fontSize: '25px' }}/>
@@ -182,6 +184,8 @@ const NavBar = () => {
               </Select>
 
             </FormControl>
+
+        </FlexBetween>
 
             </Box>
           )
