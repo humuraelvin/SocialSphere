@@ -74,7 +74,7 @@ const NavBar = () => {
         }
       </FlexBetween>
 
-        
+        { isNonMobileScreens }
 
     </FlexBetween>
   
