@@ -94,7 +94,9 @@ const NavBar = () => {
                width: '150px',
                borderRadius: '0.25rem',
                p: '0.25rem 1rem',
-               "& .MuiSvgIcon-"
+               "& .MuiSvgIcon-root":{
+                backgroundColor: neutralLight
+               }
              }}/>
             </FormControl>
 
