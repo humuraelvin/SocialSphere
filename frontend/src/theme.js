@@ -1,3 +1,5 @@
+import { light } from "@mui/material/styles/createPalette";
+
 export const colorTokens = {
     grey: {
       0: "#FFFFFF",
@@ -28,3 +30,28 @@ export const colorTokens = {
     },
   };
   
+
+
+  export const themeSettings = (mode) => {
+    return {
+        palette:{
+            mode:mode,
+            ...(mode === "dark") ? {
+                dark: colorTokens.primary[200],
+                main: colorTokens.primary[500],
+                light: colorTokens.primary[800]
+            },
+            neutral:{
+                dark: colorTokens.grey[100],
+                main: colorTokens.grey[200],
+                mediumMain: colorTokens.grey[300],
+                medium: colorTokens.grey[400],
+                light: colorTokens.grey[700]
+            },
+            background: {
+                default : colorTokens.grey[900],
+                alt: colorTokens.grey[800]
+            }
+        }
+    }
+  }
