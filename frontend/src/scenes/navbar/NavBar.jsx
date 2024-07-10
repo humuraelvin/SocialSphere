@@ -47,6 +47,7 @@ const NavBar = () => {
   const fullName = user ? `${user.firstName} ${user.lastName}` : '';
 
   return (
+    
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
       <FlexBetween gap="1.75rem">
         <Typography
@@ -61,7 +62,7 @@ const NavBar = () => {
             },
           }}
         >
-         <img src={Logo} alt="" className='logo' /> SocialSphere
+          <img src={Logo} alt="" className='logo' />SocialSphere
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
