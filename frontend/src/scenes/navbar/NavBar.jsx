@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import {
   Box,
   IconButton,
@@ -9,7 +9,8 @@ import {
   FormControl,
   useTheme,
   useMediaQuery,
-} from "@mui/material";
+} from '@mui/material';
+
 import {
   Search,
   Message,
@@ -19,13 +20,15 @@ import {
   Help,
   Menu,
   Close,
-} from "@mui/icons-material";
-import { useDispatch, useSelector } from "react-redux";
-import { setMode, setLogout } from "state";
-import { useNavigate } from "react-router-dom";
-import FlexBetween from "components/FlexBetween";
+} from '@mui/icons-material';
 
-const Navbar = () => {
+import { useDispatch, useSelector } from 'react-redux';
+import { setMode, setLogout } from '../../state/index.js';
+import { useNavigate } from 'react-router-dom';
+import FlexBetween from '../../components/FlexBetween.jsx';
+
+const NavBar = () => {
+
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -191,7 +194,9 @@ const Navbar = () => {
         </Box>
       )}
     </FlexBetween>
-  );
+
+  )
+  
 };
 
-export default Navbar;
+export default NavBar;
