@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 import Form from './Form';
+import Logo from '../../assets/logo-removebg-preview.png'
 
 const LoginPage = () => {
   const theme = useTheme();
