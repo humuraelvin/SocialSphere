@@ -4,6 +4,7 @@ import Form from './Form';
 import Logo from '../../assets/logo-removebg-preview.png'
 
 const LoginPage = () => {
+  
   const theme = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
 
