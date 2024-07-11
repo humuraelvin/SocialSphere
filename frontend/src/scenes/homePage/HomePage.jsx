@@ -25,6 +25,10 @@ const HomePage = () => {
             <UserWidget userId={_id} picturePath={picturePath}/>
         </Box>
 
+        <Box>
+          
+        </Box>
+
       </Box>
     </Box>
   )
