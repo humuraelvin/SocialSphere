@@ -25,6 +25,17 @@ const UserWidget = ({ userId, picturePath }) => {
     const medium = pallete.neutral.medium;
     const main = pallete.neutral.main;
 
-    const getUser = 
+    const getUser = async () => {
+        const response = await fetch(`http://localhost:3001/users/${userId}`,
+            {
+                method: "GET",
+                headers: { Authorization: `Bearer ${token}` },
+            }
+        );
+
+        const data = await response.json();
+        setUser(data)
+
+    }
 
 }
