@@ -32,6 +32,10 @@ const HomePage = () => {
 
         </Box>
 
+        {isNonMobileScreens && (
+          <Box flexBasis='26%'></Box>
+        )}
+
       </Box>
     </Box>
   )
