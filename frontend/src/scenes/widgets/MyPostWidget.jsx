@@ -38,6 +38,9 @@ import {
     const medium = palette.neutral.medium;
   
     const handlePost = async () => {
+
+        console.log('Post button is clickedg');
+
       const formData = new FormData();
       formData.append("userId", _id);
       formData.append("description", post);
