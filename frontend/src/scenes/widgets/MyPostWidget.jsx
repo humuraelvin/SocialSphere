@@ -172,7 +172,13 @@ const MyPostWidget = ({ picturePath }) => {
                     </FlexBetween>)}
 
                     <Button
-                     
+                     disabled={!post}
+                     onClick={handlePost}
+                     sx={{
+                        color: palette.background.alt,
+                        backgroundColor: palette.primary.main,
+                        borderRadius: "3rem"
+                     }}
                     >
                         Post
                     </Button>
