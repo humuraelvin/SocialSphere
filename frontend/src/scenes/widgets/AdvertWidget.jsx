@@ -10,11 +10,13 @@ const AdvertWidget = () => {
     const main = palette.neutral.main;
     const medium = palette.neutral.medium;
 
+   return (
     <WidgetWrapper>
         <FlexBetween>
             <Typography color={dark}></Typography>
         </FlexBetween>
     </WidgetWrapper>
+   )
 
 }
 
