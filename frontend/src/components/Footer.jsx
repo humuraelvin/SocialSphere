@@ -17,10 +17,7 @@ const Footer = () => {
       }}
     >
       <Typography variant="body1">
-        Copyright Social Sphere HUMURA PROJECTS 2024 All right reserved
-      </Typography>
-      <Typography variant="body2">
-        elvinhumura@gmail.com
+        Copyright &copy; SocialSphere HUMURA PROJECTS 2024 All right reserved
       </Typography>
     </Box>
   );

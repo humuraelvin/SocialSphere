@@ -8,6 +8,7 @@ import FriendListWidget from '../widgets/FriendListWidget'
 import MyPostWidget from '../widgets/MyPostWidget'
 import PostsWidget from '../widgets/PostsWidget'
 import UserWidget from '../widgets/UserWidget'
+import Footer from '../../components/Footer'
 
 const ProfilePage = () => {
 
@@ -67,6 +68,8 @@ const ProfilePage = () => {
         </Box>
 
       </Box>
+
+      <Footer />
 
   </Box>
 }
