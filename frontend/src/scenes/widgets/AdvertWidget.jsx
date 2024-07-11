@@ -24,7 +24,16 @@ const AdvertWidget = () => {
            height='auto'
            alt="advert"
            src={Advert}
+           style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
         />
+        <FlexBetween>
+            <Typography color={main}>Euro 2024 Final</Typography>
+            <Typography color={medium}>eurosports.com</Typography>
+        </FlexBetween>
+        <Typography color={medium} m='0.5rem 0'>
+            Books Your tickets earlier than ever and come support between england or spain ,
+            the choice is your here is Brussels, Germany
+        </Typography>
     </WidgetWrapper>
    )
 
