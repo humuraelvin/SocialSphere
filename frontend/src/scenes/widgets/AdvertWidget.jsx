@@ -31,7 +31,7 @@ const AdvertWidget = () => {
             <Typography color={medium}>eurosports.com</Typography>
         </FlexBetween>
         <Typography color={medium} m='0.5rem 0'>
-            Books Your tickets earlier than ever and come support between england or spain ,
+            Book Your tickets earlier than ever and come support between england or spain ,
             the choice is your here is Brussels, Germany
         </Typography>
     </WidgetWrapper>
