@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, useMediaQuery } from '@mui/material'
+import { Box, Typography, useMediaQuery } from '@mui/material'
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
@@ -44,29 +44,27 @@ const ProfilePage = () => {
        width='100%'
        padding='2rem 6%'
        display={isNonMobileScreens ? "flex" : "block"}
-       gap='0.5rem'
-       justifyContent='space-between'
+       gap='2rem'
+       justifyContent='center'
       >
 
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
-            <UserWidget userId={_id} picturePath={picturePath}/>
+            <UserWidget userId={userId} picturePath={user.picturePath}/>
+            <Box m='2rem 0 '/>
+            <FriendListWidget userId={userId}/>
         </Box>
 
         <Box
          flexBasis={isNonMobileScreens ? "42%" : undefined}
          mt={isNonMobileScreens ? undefined : "2rem"}
         >
-          <MyPostWidget picturePath={picturePath}/>
-          <PostsWidget userId={_id} />
+          <Typography
+            fontSize='4rem'
+            fontWeight='700'
+          > User Posts so far </Typography>
+          <Box m='2rem 0 '/>
+          <PostsWidget userId={userId}  isProfile/>
         </Box>
-
-        {isNonMobileScreens && (
-          <Box flexBasis='26%'>
-            <AdvertWidget />
-            <Box m='2rem 0'/>
-            <FriendListWidget userId={ _id }/>
-          </Box>
-        )}
 
       </Box>
 
