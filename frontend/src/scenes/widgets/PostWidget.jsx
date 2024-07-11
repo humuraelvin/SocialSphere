@@ -137,7 +137,7 @@ const PostWidget = ({
   picturePath,
   userPicturePath,
   likes,
-  comments = { default: [] }, // Default to an empty array in case comments is undefined
+  comments = { default: [] }, 
 }) => {
   const [isComments, setIsComments] = useState(false);
   const dispatch = useDispatch();
