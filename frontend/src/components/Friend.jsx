@@ -1,5 +1,5 @@
 import { PersonAddOutlined, PersonRemoveOutlined } from "@mui/icons-material";
-import { Box, IconButton, Typography, useTheme } from "@mui/material";
+import { Box, Icon, IconButton, Typography, useTheme } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { setFriends } from '../state/index.js'
 import FlexBetween from "./FlexBetween";
@@ -62,8 +62,21 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
                     >
                         {name}
                     </Typography>
+                    <Typography
+                    color={medium}
+                    >
+                        {subtitle}
+                    </Typography>
                 </Box>
             </FlexBetween>
+
+            <IconButton
+              onClick={() => patchFriend()}
+              sx={{ backgroundColor: primaryLight, p: "0.6rem" }}
+            >
+                
+            </IconButton>
+
         </FlexBetween>
     )
 
