@@ -136,7 +136,13 @@ const MyPostWidget = ({ picturePath }) => {
                 )
             }
 
-            
+            <Divider sx={{ margin: "1.25rem 0" }}/>
+
+            <FlexBetween>
+                <FlexBetween gap='0.25rem' onClick={() => setImage(!isImage)}>
+                    
+                </FlexBetween>
+            </FlexBetween>
 
         </WidgetWrapper>
     )
