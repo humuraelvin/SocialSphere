@@ -99,7 +99,15 @@ const PostsWidget = ({
 
             </FlexBetween>
 
-            
+            {isComments && (
+                <Box mt='0.5rem'>
+                    {comments.map((comment) => (
+                        <Box key={`${name} = ${i}`}>
+                            <Divider />
+                        </Box>
+                    ))}
+                </Box>
+            )}
 
         </WidgetWrapper>
     )
