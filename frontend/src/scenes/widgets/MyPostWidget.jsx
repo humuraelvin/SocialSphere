@@ -98,11 +98,12 @@ const MyPostWidget = ({ picturePath }) => {
                     acceptedFiles=".jpg,.jpeg,.png"
                     multiple={false}
                     onDrop={(acceptedFiles) =>
-                      setFieldValue("picture", acceptedFiles[0])
+                      setImage(acceptedFiles[0])
                     }
                   >
                     {({ getRootProps, getInputProps }) => (
-                      <Box
+                     <FlexBetween>
+                         <Box
                         {...getRootProps()}
                         border={`2px dashed ${palette.primary.main}`}
                         p="1rem"
@@ -118,6 +119,7 @@ const MyPostWidget = ({ picturePath }) => {
                           </FlexBetween>
                         )}
                       </Box>
+                     </FlexBetween>
                     )}
                   </Dropzone>
 
