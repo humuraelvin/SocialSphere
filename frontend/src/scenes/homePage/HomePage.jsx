@@ -21,7 +21,7 @@ const HomePage = () => {
       >
 
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
-
+            
         </Box>
 
       </Box>
