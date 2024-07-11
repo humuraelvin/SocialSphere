@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import NavBar from '../navbar/NavBar'
 import UserWidget from '../../scenes/widgets/UserWidget'
 import MyPostWidget from '../../scenes/widgets/MyPostWidget'
+import PostWidget from '../../scenes/widgets/PostWidget'
 
 const HomePage = () => {
 
@@ -31,6 +32,7 @@ const HomePage = () => {
          mt={isNonMobileScreens ? undefined : "2rem"}
         >
           <MyPostWidget picturePath={picturePath}/>
+          <PostWidget />
         </Box>
 
         {isNonMobileScreens && (
