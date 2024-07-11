@@ -163,10 +163,8 @@ const PostWidget = ({
     dispatch(setPost({ post: updatedPost }));
   };
 
-  // Extract comments array from the structure
   const commentsArray = comments.default;
 
-  // Log the type and value of commentsArray
   console.log('Type of commentsArray:', typeof commentsArray);
   console.log('Is commentsArray an array:', Array.isArray(commentsArray));
   console.log('CommentsArray value:', commentsArray);
