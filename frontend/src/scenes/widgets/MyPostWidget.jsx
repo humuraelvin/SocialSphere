@@ -39,7 +39,7 @@ import {
   
     const handlePost = async () => {
 
-        console.log('Post button is clickedg');
+        console.log('Post button is clicked');
 
       const formData = new FormData();
       formData.append("userId", _id);
