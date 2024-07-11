@@ -32,7 +32,7 @@ const HomePage = () => {
          mt={isNonMobileScreens ? undefined : "2rem"}
         >
           <MyPostWidget picturePath={picturePath}/>
-          <PostWidget />
+          <PostWidget userId={_id} />
         </Box>
 
         {isNonMobileScreens && (
