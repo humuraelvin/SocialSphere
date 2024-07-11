@@ -33,11 +33,13 @@ const ProfilePage = () => {
     getUser();
   }, [])
 
-  return (
-    <div>
-      ProfilePage 
-    </div>
-  )
+  if (!user) {
+    return null
+  }
+
+  return <Box>
+    <NavBar />
+  </Box>
 }
 
 export default ProfilePage
