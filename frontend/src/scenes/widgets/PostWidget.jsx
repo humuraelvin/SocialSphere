@@ -95,9 +95,12 @@ const PostsWidget = ({
                     </FlexBetween>
                 </FlexBetween>
 
-                
+                <IconButton><ShareOutlined /></IconButton>
 
             </FlexBetween>
+
+            
+
         </WidgetWrapper>
     )
 
