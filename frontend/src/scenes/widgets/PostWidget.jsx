@@ -15,8 +15,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setPost } from '../../state/index.js'
 
 
-const PostsWidget = ({
-    key,
+const PostWidget = ({
     postId,
     postUserId,
     name,
