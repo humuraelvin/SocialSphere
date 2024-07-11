@@ -164,7 +164,7 @@ import {
               cursor: 'pointer'
             }}
           >
-            Share
+            Post
           </Button>
         </FlexBetween>
       </WidgetWrapper>
