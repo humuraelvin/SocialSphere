@@ -23,7 +23,7 @@ const getFriends = async () => {
     );
 
     const data = await response.json()
-    dispatch(setFriends( friends : data ))
+    dispatch(setFriends({ friends: data }))
 
 }
 
