@@ -107,18 +107,27 @@ const MyPostWidget = ({ picturePath }) => {
                         {...getRootProps()}
                         border={`2px dashed ${palette.primary.main}`}
                         p="1rem"
+                        width='100%'
                         sx={{ "&:hover": { cursor: "pointer" } }}
                       >
                         <input {...getInputProps()} />
-                        {!values.picture ? (
-                          <p>Add Picture Here</p>
+                        {!image ? (
+                          <p>Add Image Here</p>
                         ) : (
                           <FlexBetween>
-                            <Typography>{values.picture.name}</Typography>
-                            <EditOutlinedIcon />
+                            <Typography>{image.name}</Typography>
+                            <EditOutlined />
                           </FlexBetween>
                         )}
                       </Box>
+                      {image && (
+                        <IconButton
+                        onClick={() => setImage(null)}
+                        sx={{ width: "15%" }}
+                        >
+                            <DeleteOutline />
+                        </IconButton>
+                      )}
                      </FlexBetween>
                     )}
                   </Dropzone>
@@ -126,6 +135,9 @@ const MyPostWidget = ({ picturePath }) => {
                     </Box>
                 )
             }
+
+            
+
         </WidgetWrapper>
     )
 
