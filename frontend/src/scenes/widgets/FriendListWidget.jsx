@@ -6,7 +6,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { setFriends } from "../../state/index.js";
 
 const FriendListWidget = ({ userId }) =>{
-
+    const dispatch = useDispatch();
+    const theme = useTheme();
+    const { palette } = useTheme();
+    const token  = useSelector((state) => state.token)
+    const friends = useSelector((state) => state.user.friends)
 }
+
+
 
 export default FriendListWidget;
