@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, useMediaQuery } from '@mui/material'
 import { useSelector } from 'react-redux'
 import NavBar from '../navbar/NavBar'
+import UserWidget from '../../scenes/widgets/UserWidget'
 
 const HomePage = () => {
 
@@ -21,7 +22,7 @@ const HomePage = () => {
       >
 
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
-            
+
         </Box>
 
       </Box>
