@@ -38,4 +38,8 @@ const UserWidget = ({ userId, picturePath }) => {
 
     };
 
+    useEffect(() => {
+        getUser();
+    }, [])
+
 }
