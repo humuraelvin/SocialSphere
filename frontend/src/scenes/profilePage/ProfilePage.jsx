@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box, useMediaQuery } from '@mui/material'
 
 const ProfilePage = () => {
   return (
