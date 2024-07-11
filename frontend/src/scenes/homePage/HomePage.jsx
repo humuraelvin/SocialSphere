@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box } from '@mui/material'
+import { Box, useMediaQuery } from '@mui/material'
+import { useSelector } from 'react-redux'
 import NavBar from '../navbar/NavBar'
 
 const HomePage = () => {
