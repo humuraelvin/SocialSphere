@@ -14,6 +14,7 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setPost } from '../../state/index.js'
 
+
 const PostsWidget = ({
     key,
     postId,
@@ -26,19 +27,30 @@ const PostsWidget = ({
     likes,
     comments
 }) => {
+    const [isComments, setIsComments] = useState(false)
     const dispatch = useDispatch();
-    const navigate = useNavigate();
-    const { _id } = useSelector((state) => state.user);
     const token  = useSelector((state) => state.token)
-    const friends = useSelector((state) => state.user.friends)
+    const isLiked = Boolean(likes[loggedInUserId])
+    const likeCount = Object.keys(likes).length
 
     const { palette } = useTheme();
-    const primaryLight = palette.primary.light
-    const primaryDark = palette.primary.dark
     const main = palette.neutral.main
-    const medium = palette.neutral.medium
+    const medium = palette.primary.main
 
-    
+    const patchLike = async () => {
+       const response =  await fetch (`http://localhost:3001/posts/${postId}/like`, {
+            method: "PATCH",
+            headers: {
+                Authorization: `Bearer ${token}`,
+                "Content-Type" : "application/json"
+            },
+            body: JSON.stringify({ userId: loggedInUserId })
+        });
+
+        const updatedPost = await response.json()
+        dispatch(setPost({ post: updatedPost }))
+
+    };
 
 }
 
