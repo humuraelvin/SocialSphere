@@ -71,8 +71,9 @@ const NavBar = () => {
             borderRadius="9px"
             gap="3rem"
             padding="0.1rem 1.5rem"
+            width='70rem'
           >
-            <InputBase placeholder="Search..." />
+            <InputBase placeholder="Search..."/>
             <IconButton>
               <Search />
             </IconButton>
