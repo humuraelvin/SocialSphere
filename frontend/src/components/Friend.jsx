@@ -5,3 +5,6 @@ import { setFriends } from '../state/index.js'
 import FlexBetween from "./FlexBetween";
 import UserImage from "./UserImage";
 
+const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
+    const dispatch = useDispatch();
+}
