@@ -14,5 +14,34 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
     const friends = useSelector((state) => state.user.friends)
 
     const { palette } = useTheme();
+    const primaryLight = palette.primary.light
+    const primaryDark = palette.primary.dark
+    const main = palette.neutral.main
+    const medium = palette.neutral.medium
+
+    const isFriend = friends.find((friend) => friend._id === friendId)
+
+    const patchFriend = async () => {
+        const response = await fetch(
+            `http://localhost:3001/users/${_id}/${friendId}`,
+            {
+                method: "PATCH",
+                headers: {
+                    Authorization : `Bearer ${token}`,
+                    "Content-Type": "application/json"
+                }
+            }
+        );
+
+        const data = await response.json()
+        dispatch(setFriends({ friends:data }))
+
+    };
+
+
+
 
 }
+
+
+export default Friend;
