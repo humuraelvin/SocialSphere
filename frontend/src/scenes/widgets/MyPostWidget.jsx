@@ -145,9 +145,13 @@ const MyPostWidget = ({ picturePath }) => {
                     color={mediumMain}
                     sx={{ "&:hover": {cursor: "ponter", color: medium} }}
                     >
-
+                        Image
                     </Typography>
                 </FlexBetween>
+
+                {isNonMobileScreens ? (
+                    
+                )}
             </FlexBetween>
 
         </WidgetWrapper>
