@@ -165,9 +165,9 @@ const PostWidget = ({
 
   const commentsArray = comments.default;
 
-  console.log('Type of commentsArray:', typeof commentsArray);
-  console.log('Is commentsArray an array:', Array.isArray(commentsArray));
-  console.log('CommentsArray value:', commentsArray);
+  // console.log('Type of commentsArray:', typeof commentsArray);
+  // console.log('Is commentsArray an array:', Array.isArray(commentsArray));
+  // console.log('CommentsArray value:', commentsArray);
 
   return (
     <WidgetWrapper m="2rem 0">
