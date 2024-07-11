@@ -13,8 +13,14 @@ const AdvertWidget = () => {
    return (
     <WidgetWrapper>
         <FlexBetween>
-            <Typography color={dark}></Typography>
+            <Typography color={dark}>
+                Sponsored
+            </Typography>
+            <Typography color={medium}>Create Ad</Typography>
         </FlexBetween>
+        <img 
+        
+        />
     </WidgetWrapper>
    )
 
