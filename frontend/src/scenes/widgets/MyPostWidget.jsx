@@ -29,3 +29,12 @@ import WidgetWrapper from '../../components/WidgetWrapper'
 import { useState } from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 import { setPosts } from '../../state/index.js'
+
+const MyPostWidget = ({ picturePath }) => {
+    const dispatch = useDispatch()
+    const [isImage, setIsImage] = useState(false)
+    const [image, setImage] = useState(null)
+    const [post, setPost] = useState("")
+    const { pallete } = useTheme()
+    const { _id } = useSelector((state) => state.user)
+}
