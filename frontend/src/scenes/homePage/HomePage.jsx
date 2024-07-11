@@ -17,7 +17,12 @@ const HomePage = () => {
        padding='2rem 6%'
        display={isNonMobileScreens ? "flex" : "block"}
        gap='0.5rem'
+       justifyContent='space-between'
       >
+
+        <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
+
+        </Box>
 
       </Box>
     </Box>
