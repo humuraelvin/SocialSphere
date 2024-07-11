@@ -25,6 +25,10 @@ const FriendListWidget = ({ userId }) =>{
         dispatch(setFriends({ friends: data }))
     
     };
+
+    useEffect(() => {
+        getFriends();
+    })
     
 
 }
