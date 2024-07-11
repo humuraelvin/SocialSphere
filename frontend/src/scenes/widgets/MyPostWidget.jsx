@@ -140,7 +140,13 @@ const MyPostWidget = ({ picturePath }) => {
 
             <FlexBetween>
                 <FlexBetween gap='0.25rem' onClick={() => setImage(!isImage)}>
-                    
+                    <ImageOutlined sx={{ color: mediumMain }}/>
+                    <Typography
+                    color={mediumMain}
+                    sx={{ "&:hover": {cursor: "ponter", color: medium} }}
+                    >
+
+                    </Typography>
                 </FlexBetween>
             </FlexBetween>
 
